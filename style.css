@@ -9,14 +9,13 @@
   grid-template-columns: 1fr;
   height: 100vh;
   overflow: hidden;
-  gap: 2em;
 }
 
 .video-player {
   background-color: black;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #user-2 {
@@ -30,9 +29,9 @@
   height: 170px;
   width: 300px;
   border-radius: 5px;
-  border: 2px solid #b38669;
-  -webkit-box-shadow: 3px 3px 15px -1px rgb(0, 0, 0, 0.77);
-  box-shadow: 3px 3px 15px -1px rgb(0, 0, 0, 0.77);
+  border: 2px solid #b366f9;
+  -webkit-box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.77);
+  box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.77);
   z-index: 999;
 }
 

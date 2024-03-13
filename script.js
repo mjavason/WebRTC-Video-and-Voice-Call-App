@@ -107,7 +107,7 @@ let createPeerConnection = async (MemberId) => {
 
   // If local stream is not already available, get it and display it
   if (!localStream) {
-    localStream = await navigator.mediaDevices.getUserMedia(constraints);
+    localStream = await navigator.mediaDevices.getUserMedia({video:true, audio:false})
     document.getElementById('user-1').srcObject = localStream;
   }
 

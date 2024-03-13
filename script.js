@@ -224,13 +224,21 @@ window.addEventListener('beforeunload', leaveChannel);
 document.getElementById('camera-btn').addEventListener('click', toggleCamera);
 document.getElementById('mic-btn').addEventListener('click', toggleMic);
 
+// let constraints = {
+//   video: {
+//     width: { min: 320, ideal: 320, max: 320 },
+//     height: { min: 240, ideal: 240, max: 240 },
+//   },
+//   audio: true,
+// };
+
 let constraints = {
-  video: {
-    width: { min: 320, ideal: 320, max: 320 },
-    height: { min: 240, ideal: 240, max: 240 },
+  video:{
+      width:{min:640, ideal:1920, max:1920},
+      height:{min:480, ideal:1080, max:1080},
   },
-  audio: true,
-};
+  audio:true
+}
 
 // Initialize the WebRTC session
 init();

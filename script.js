@@ -226,8 +226,8 @@ document.getElementById('mic-btn').addEventListener('click', toggleMic);
 
 let constraints = {
   video: {
-    width: { min: 640, ideal: 1920, max: 1920 },
-    height: { min: 480, ideal: 1080, max: 1080 },
+    width: { min: 320, ideal: 320, max: 320 },
+    height: { min: 240, ideal: 240, max: 240 },
   },
   audio: true,
 };

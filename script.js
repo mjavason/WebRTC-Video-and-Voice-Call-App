@@ -3,7 +3,7 @@ let localStream; // Local media stream object
 let remoteStream; // Remote media stream object
 let peerConnection; // RTCPeerConnection object
 
-let APP_ID = 'cb99dffcd3724a54bbc1301d978df148'; // Agora App ID
+let APP_ID = '8b85719366314bc7825165b502d67392'; // Agora App ID
 
 let token = null; // Token for authentication
 let uid = String(Math.floor(Math.random() * 10000)); // Unique user ID

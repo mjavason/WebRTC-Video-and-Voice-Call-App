@@ -109,13 +109,14 @@ let init = async () => {
   // Log in to the AgoraRTM client with a randomly generated user ID and optional token
   await client.login({ uid, token });
 
-  // Create a channel named 'main' and join it
+  // Create a channel and join it
   channel = client.createChannel(roomId);
   await channel.join();
 
   // Listen for when a new member joins the channel
   channel.on('MemberJoined', handleUserJoined);
 
+  // Listen for when a member leaves
   channel.on('MemberLeft', handleUserLeft);
 
   // Listen for messages from peers
@@ -126,9 +127,6 @@ let init = async () => {
 
   // Display local stream in the first user's video element
   document.getElementById('user-1').srcObject = localStream;
-
-  // Create an offer to start a WebRTC session
-  // createOffer();
 };
 
 let handleUserLeft = (MemberId) => {
